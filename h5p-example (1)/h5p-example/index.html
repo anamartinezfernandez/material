@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5P Example</title>
+</head>
+<body>
+    <div id='h5p-container'></div>
+</body>
+<script type="text/javascript" src="./assets/main.bundle.js"></script>
+<script>
+    const el = document.getElementById('h5p-container');
+    const options = {
+        h5pJsonPath:  './h5p-folder',
+        frameJs: './assets/frame.bundle.js',
+        frameCss: './assets/styles/h5p.css',
+    }
+    new H5PStandalone.H5P(el, options);
+</script>
+</html>
